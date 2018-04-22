@@ -4,5 +4,8 @@ module.exports = {
     port: 9000,
     open: true,
     proxy: {}
+  },
+  build: {
+    publicPath: '/'
   }
 };

@@ -4,7 +4,6 @@ const path = require('path');
 const config = require('./config');
 const baseWebpackConfig = require('./webpack.base.conf');
 const htmlWebpackPlugin = require('html-webpack-plugin');
-const utils = require('./utils');
 
 const devWebapckConfig = merge(baseWebpackConfig, {
   devtool: 'eval-source-map',

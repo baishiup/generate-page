@@ -1,8 +1,9 @@
 const webpack = require('webpack');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const utils = require('./utils');
 const fs = require('fs');
+const utils = require('./utils');
+const config = require('./config');
 const projectDirAll = fs.readdirSync(path.resolve(__dirname, '../src/project'));
 
 let entry = {};
@@ -52,7 +53,7 @@ const baseConfig = {
   output: {
     filename: 'js/[name].js',
     path: path.resolve(__dirname, '../dist'),
-    publicPath: '/'
+    publicPath: config.build.publicPath
   },
   resolve: {
     extensions: ['.js', '.json']
