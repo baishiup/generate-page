@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    活动页面项目指南
+  </title>
+</head>
+
+<body style="padding: 0 20px">
+  <h1 style="text-align: center">活动页面项目指南</h1>
+  <p>TODO:已运行项目.(html-loader/raw-loader会覆盖掉htmlWebpackPlugin的模板规则)</p>
+
+  <h2>全部运行</h2>
+  <p>npm run dev</p>
+  <p>npm run build</p>
+  <h4>访问和打包方式:</h4>
+  <p>localhost:8080/projectName/index.html</p>
+  <br>
+  <h2>运行单个项目</h2>
+  <p>npm run dev --projectName(npm run dev --demo)</p>
+  <p>npm run build --projectName(npm run dev --demo)</p>
+  <h4>访问和打包方式：</h4>
+  <p>localhost:8080/index.html</p>
+  <br>
+  <h2>项目结构</h2>
+  <p>src/project/新项目文件夹</p>
+  <p>必备文件为：1.index.js 2.index.html</p>
+  <p>入口为index.js</p>
+  <p>每个页面文件夹必须包含 README.md 说明文件夹使用途径</p>
+  <br>
+  <h4>tag:</h4>
+  <p>1. 如果需要html入口文件支持热更新，可以在Index.js里 import './index.html'，在开发完成后移除这句。</p>
+</body>
+
+</html>
