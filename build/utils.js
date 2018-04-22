@@ -5,7 +5,6 @@ exports.getArgs = function() {
   } catch (ex) {
     argvs = process.argv;
   }
-  console.log(argvs);
   return argvs;
 };
 

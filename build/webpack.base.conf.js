@@ -34,7 +34,7 @@ if (utils.isAppoint) {
 }
 
 // add guide
-if (utils.isDev) {
+if (!utils.isAppoint && utils.isDev) {
   entry.guide = '../guide/index.js';
   plugins.push(
     new htmlWebpackPlugin({
@@ -51,7 +51,8 @@ const baseConfig = {
   entry,
   output: {
     filename: 'js/[name].js',
-    path: path.resolve(__dirname, '../dist')
+    path: path.resolve(__dirname, '../dist'),
+    publicPath: '/'
   },
   resolve: {
     extensions: ['.js', '.json']
